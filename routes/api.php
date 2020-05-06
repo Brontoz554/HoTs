@@ -16,14 +16,14 @@ use Illuminate\Http\Request;
 Route::post('/signup', 'UserController@store');
 Route::post('/login', 'UserController@login');
 Route::get('/yes', 'UserController@confirm');
-Route::get('/index', 'UserController@index');
+Route::get('/index', 'UserController@index'); // Все юзеры
 Route::delete('/user/{user}', 'UserController@delete');
+Route::get('/feed-back', 'FeedbackController@index'); // Отзывы всех юзеров
 Route::middleware('auth:api')->group(function () {
     Route::get('/logout', 'UserController@logout');
     Route::post('/feed-back', 'FeedbackController@store');
     Route::post('/update-feed-back', 'FeedbackController@update');
     Route::delete('/delete-feed-back/{feedback}','FeedbackController@delete');
-    Route::get('/feed-back', 'FeedbackController@index');
     Route::get('/user/feed-back', 'UserController@show');
 });
 //Route::apiresource('list','TaskController');

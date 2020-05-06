@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e493a8ba-727b-41cd-a48b-5274f37143a6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_02_231719_user_table_create.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_02_231719_user_table_create.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -145,7 +144,7 @@
       <workItem from="1588603444168" duration="5904000" />
       <workItem from="1588663417817" duration="7713000" />
       <workItem from="1588682296041" duration="3641000" />
-      <workItem from="1588756421793" duration="4818000" />
+      <workItem from="1588756421793" duration="5108000" />
     </task>
     <servers />
   </component>
