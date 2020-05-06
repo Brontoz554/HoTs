@@ -15,7 +15,7 @@ class PostRequest extends ApiRequest
     public function rules()
     {
         return [
-            'comment' => 'required|max:200|min:20|regex:/[А-яЁё A-z0-9]/',
+            'comment' => 'required|max:200|min:20|regex:/[А-яЁё A-z0-9,]/',
         ];
     }
 }
