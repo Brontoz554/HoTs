@@ -129,7 +129,7 @@ class UserController extends Controller
 
     public function profile(People $request)
     {
-        if (count(\App\People::where(['people_id' => Auth::id()])->get()) != 1) {
+        if (count(\App\People::where(['user_id' => Auth::id()])->get()) != 1) {
             $info = new \App\People();
             $info->first_name = $request->first_name;
             $info->second_name = $request->second_name;
