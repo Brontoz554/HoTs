@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Feedback;
 use App\Http\Requests\PostRequest;
+use App\Http\Requests\UpDateFeedBack;
 use App\User;
 use Illuminate\Support\Facades\Auth;
 
@@ -28,8 +29,8 @@ class FeedbackController extends Controller
     {
         $feedback = User::with('feedback')->get();
         $NotNullFeedback = [];
-        foreach ($feedback as $item){
-            if(count($item->feedback) != 0){
+        foreach ($feedback as $item) {
+            if (count($item->feedback) != 0) {
                 array_push($NotNullFeedback, $item);
             }
         }
@@ -38,4 +39,27 @@ class FeedbackController extends Controller
             $NotNullFeedback,
         ], 200);
     }
+
+    public function update(UpDateFeedBack $request)
+    {
+        $update = Feedback::where(['id' => $request->id])->first();
+        if ($update->user_id == Auth::id()) {
+            $update->comment = $request->comment;
+            $update->save();
+            return response()->json([
+                'success' => true,
+            ], 200);
+        }
+    }
+
+    public function delete(Feedback $feedback)
+    {
+        if ($feedback->user_id == Auth::id()) {
+            $feedback->delete();
+            return response()->json([
+                'success' => true,
+            ], 200);
+        }
+    }
 }
+

@@ -21,8 +21,10 @@ Route::delete('/user/{user}', 'UserController@delete');
 Route::middleware('auth:api')->group(function () {
     Route::get('/logout', 'UserController@logout');
     Route::post('/feed-back', 'FeedbackController@store');
+    Route::post('/update-feed-back', 'FeedbackController@update');
+    Route::delete('/delete-feed-back/{feedback}','FeedbackController@delete');
     Route::get('/feed-back', 'FeedbackController@index');
-    Route::get('user/feed-back', 'UserController@show');
+    Route::get('/user/feed-back', 'UserController@show');
 });
 //Route::apiresource('list','TaskController');
 
