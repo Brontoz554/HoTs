@@ -101,7 +101,7 @@ class UserController extends Controller
     public function index()
     {
 //        $user = User::with('feedback')->get();
-        $user = User::all();
+        $user = User::with('people')->get();
         return response()->json([
             'success' => true,
             $user
