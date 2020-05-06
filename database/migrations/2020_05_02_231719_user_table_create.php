@@ -19,7 +19,7 @@ class UserTableCreate extends Migration
             $table->string('password',20);
             $table->string('api_token',100)->nullable();
             $table->string('active',20)->default(0);
-            $table->unsignedBigInteger('role')->default(0);
+            $table->string('role')->default(0);
             $table->timestamps();
 
         });
