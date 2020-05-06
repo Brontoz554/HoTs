@@ -15,15 +15,13 @@ class UserTableCreate extends Migration
     {
         Schema::create('user', function (Blueprint $table) {
             $table->bigIncrements('id');
-//            $table->unsignedBigInteger('list_id');
             $table->string('email', 40)->unique();
             $table->string('password',20);
             $table->string('api_token',100)->nullable();
             $table->string('active',20)->default(0);
-            $table->string('role',20)->default(0);
+            $table->unsignedBigInteger('role')->default(0);
             $table->timestamps();
 
-            //         $table->foreign('list_id')->references('id')->on('lists')->onDelete('cascade');
         });
     }
 
