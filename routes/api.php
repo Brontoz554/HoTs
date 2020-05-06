@@ -25,6 +25,7 @@ Route::middleware('auth:api')->group(function () {
     Route::post('/update-feed-back', 'FeedbackController@update');
     Route::delete('/delete-feed-back/{feedback}','FeedbackController@delete');
     Route::get('/user/feed-back', 'UserController@show');
+    Route::post('/user/info','UserController@profile');
 });
 //Route::apiresource('list','TaskController');
 

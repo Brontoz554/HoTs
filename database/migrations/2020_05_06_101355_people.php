@@ -15,16 +15,17 @@ class People extends Migration
     {
         Schema::create('people', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('people_id');
+            $table->unsignedBigInteger('user_id');
             $table->string('first_name', 40);
             $table->string('second_name', 40);
+            $table->integer('age');
             $table->string('activity', 50);
             $table->string('gender', 20);
             $table->integer('height');
             $table->integer('weight')->default(0);
             $table->timestamps();
 
-            $table->foreign('people_id')->references('id')->on('user')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('user')->onDelete('cascade');
         });
     }
 

@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Feedback;
+use App\Http\Requests\People;
 use App\Http\Requests\SignIn;
 use App\Http\Requests\SignUp;
 use App\User;
-use http\Client\Response;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
@@ -64,7 +64,7 @@ class UserController extends Controller
      */
     public function login(SignIn $request)
     {
-        if ($user = User::where(['email' => $request->email])->first() and ($request->password == $user->password)) {
+        if ($user = User::where(['email' => $request->email])->with('people')->first() and ($request->password == $user->password)) {
             if ($user->active == 1) {
                 $token = $user->generateToken();
                 return response()->json([
@@ -125,6 +125,28 @@ class UserController extends Controller
             'success' => true,
             'message' => 'Пользователь удалён'
         ], 200);
+    }
+
+    public function profile(People $request)
+    {
+        if (count(\App\People::where(['people_id' => Auth::id()])->get()) != 1) {
+            $info = new \App\People();
+            $info->first_name = $request->first_name;
+            $info->second_name = $request->second_name;
+            $info->age = $request->age;
+            $info->height = $request->height;
+            $info->weight = $request->weight;
+            $info->gender = $request->gender;
+            $info->activity = $request->activity;
+            $info->user_id = Auth::id();
+            $info->save();
+            return response()->json([
+                'success' => true,
+            ], 201);
+        }
+        return response()->json([
+            'success' => false,
+        ], 201);
     }
 }
 

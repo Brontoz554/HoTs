@@ -43,6 +43,11 @@ class User extends Authenticatable
         return $this->hasMany(Feedback::class);
     }
 
+    public function people()
+    {
+        return $this->hasOne('App\People');
+    }
+
     public function generateToken()
     {
         $this->api_token = md5(time() + rand(0, 100));
