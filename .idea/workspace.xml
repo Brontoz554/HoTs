@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e493a8ba-727b-41cd-a48b-5274f37143a6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/laravel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/SignUp.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/SignUp.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +108,8 @@
       <path value="$PROJECT_DIR$/vendor/facade/ignition-contracts" />
       <path value="$PROJECT_DIR$/vendor/facade/flare-client-php" />
       <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/vendor/asm89/stack-cors" />
+      <path value="$PROJECT_DIR$/vendor/fruitcake/laravel-cors" />
     </include_path>
   </component>
   <component name="ProjectId" id="1aD37NrHQ4YvnEvrs808LYBIkYy" />
@@ -145,6 +150,8 @@
       <workItem from="1588663417817" duration="7713000" />
       <workItem from="1588682296041" duration="3641000" />
       <workItem from="1588756421793" duration="11723000" />
+      <workItem from="1588922979170" duration="647000" />
+      <workItem from="1588948830930" duration="3530000" />
     </task>
     <servers />
   </component>
@@ -160,6 +167,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1588758348547" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1588923625343">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1588923625343" />
     <state x="184" y="6" key="SettingsEditor" timestamp="1586257945745">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -168,9 +179,13 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1588756784003" />
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1588756672948">
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1588923008973">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1588756672948" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1588923008973" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1588952135896">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1588952135896" />
   </component>
 </project>
