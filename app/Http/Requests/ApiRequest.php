@@ -21,6 +21,7 @@ class ApiRequest extends FormRequest
         return [
             'required' => 'Поле :attribute не может быть пустым',
             'email.regex' => 'Такой электронной почты не существует',
+            'role.regex' => 'Вы используете запрещённые символы',
             'email.unique' => 'Пользователь с таким E-mail уже существует.',
             'min' => 'Поле :attribute должно содержать минимум :min символов',
             'max' => 'Поле :attribute должно содержать минимум :max символов',
