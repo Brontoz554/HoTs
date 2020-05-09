@@ -16,7 +16,11 @@ use Illuminate\Http\Request;
 Route::post('/signup', 'UserController@store');
 Route::post('/login', 'UserController@login');
 Route::get('/yes', 'UserController@confirm');
+
 Route::get('/index', 'UserController@index'); // Все юзеры
+Route::get('/trainer', 'UserController@trainer'); // Все Тренера
+Route::get('/sportsmen', 'UserController@sportsmen'); // Все подопечные
+
 Route::delete('/user/{user}', 'UserController@delete');
 Route::get('/feed-back', 'FeedbackController@index'); // Отзывы всех юзеров
 Route::middleware('auth:api')->group(function () {

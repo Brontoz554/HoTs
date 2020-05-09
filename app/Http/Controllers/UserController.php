@@ -108,6 +108,32 @@ class UserController extends Controller
         ], 200);
     }
 
+    /**
+     * Вывод всех тренеров
+     * @return object
+     */
+    public function trainer()
+    {
+        $user = User::where(['role' => 'trainer'])->with('people')->get();
+        return response()->json([
+            'success' => true,
+            $user
+        ], 200);
+    }
+
+    /**
+     * Вывод всех подопечных
+     * @return object
+     */
+    public function sportsmen()
+    {
+        $user = User::where(['role' => 'user'])->with('people')->get();
+        return response()->json([
+            'success' => true,
+            $user
+        ], 200);
+    }
+
     public function show()
     {
 //        $feedback = User::where(['id' => Auth::id()])->with('feedback')->get();
@@ -130,6 +156,10 @@ class UserController extends Controller
     public function profile(People $request)
     {
         if (count(\App\People::where(['user_id' => Auth::id()])->get()) != 1) {
+
+            $fileName = md5(time() + rand(0, 50)) . "." . $request->photo->getClientOriginalExtension();
+            $path = $request->file('photo')->move(public_path("/image"), $fileName);
+
             $info = new \App\People();
             $info->first_name = $request->first_name;
             $info->second_name = $request->second_name;
@@ -139,6 +169,7 @@ class UserController extends Controller
             $info->gender = $request->gender;
             $info->activity = $request->activity;
             $info->user_id = Auth::id();
+            $info->photo = url('/image/' . $fileName);
             $info->save();
             return response()->json([
                 'success' => true,

@@ -21,6 +21,7 @@ class People extends ApiRequest
             'activity' => 'required|min:2|max:50|regex:/[А-яЁё A-z0-9,]/',
             'gender' => 'required|min:2|max:20',
             'age' => 'required|min:1|max:3|regex:/[0-9]/',
+            'photo' => 'required|mimes:jpeg,bmp,png'
         ];
     }
 }

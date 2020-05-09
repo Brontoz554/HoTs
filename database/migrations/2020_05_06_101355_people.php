@@ -22,9 +22,11 @@ class People extends Migration
             $table->string('activity', 50);
             $table->string('gender', 20);
             $table->integer('height');
-            $table->integer('weight')->default(0);
+            $table->integer('weight');
+            $table->string('photo', 100);
+            $table->string('experience', 200)->default(0);
+            $table->string('description', 400)->default(0);
             $table->timestamps();
-
             $table->foreign('user_id')->references('id')->on('user')->onDelete('cascade');
         });
     }
