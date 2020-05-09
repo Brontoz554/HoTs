@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e493a8ba-727b-41cd-a48b-5274f37143a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/image/0ce040c16dcaa06cbe7c57b9a90f756b.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/4e696868c99cd4fa264058ce1f26af32.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/a68a5445908161ec3f3d7cf466178dbf.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/f2c586bbd7f0ddd21d5819ba39b3017d.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/f5c6432cba54e25537e7379c33ae42bc.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Requests/People.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/People.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_06_101355_people.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_06_101355_people.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +152,7 @@
       <workItem from="1588922979170" duration="647000" />
       <workItem from="1588948830930" duration="4020000" />
       <workItem from="1588965438145" duration="330000" />
-      <workItem from="1589008406662" duration="4634000" />
+      <workItem from="1589008406662" duration="5185000" />
     </task>
     <servers />
   </component>
