@@ -11,7 +11,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 
-
 class UserController extends Controller
 {
     /**
@@ -28,11 +27,17 @@ class UserController extends Controller
                 $message->to($user->email)->subject('Добро пожаловать в нашу дружную семью');
                 $message->from('tifilum2020@gmail.com');
             });
+
+            return response()->json([
+                'success' => true,
+                'user id' => $user->id
+            ], 201);
         }
+
         return response()->json([
-            'success' => true,
-            'user id' => $user->id
-        ], 201);
+            'success' => false,
+        ], 200);
+
     }
 
     /**

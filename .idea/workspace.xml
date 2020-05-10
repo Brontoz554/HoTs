@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e493a8ba-727b-41cd-a48b-5274f37143a6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/People.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/People.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +152,9 @@
       <workItem from="1588922979170" duration="647000" />
       <workItem from="1588948830930" duration="4020000" />
       <workItem from="1588965438145" duration="330000" />
-      <workItem from="1589008406662" duration="5185000" />
+      <workItem from="1589008406662" duration="5784000" />
+      <workItem from="1589103089421" duration="747000" />
+      <workItem from="1589105939083" duration="623000" />
     </task>
     <servers />
   </component>
@@ -184,10 +186,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1588756784003" />
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1589008407226">
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1589105939575">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1589008407226" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1589105939575" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1588952135896">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
