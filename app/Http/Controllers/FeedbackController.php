@@ -27,7 +27,7 @@ class FeedbackController extends Controller
 
     public function index()
     {
-        $feedback = User::with('feedback')->with('people')->get();
+        $feedback = User::with('people')->with('feedback')->get();
         $NotNullFeedback = [];
         foreach ($feedback as $item) {
             if (count($item->feedback) != 0) {
