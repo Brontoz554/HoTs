@@ -74,7 +74,7 @@ class UserController extends Controller
                 $token = $user->generateToken();
                 return response()->json([
                     'success' => true,
-                    $user->role,
+                    'active' => $user->role,
                     $user,
                 ], 200);
             } else {
@@ -87,7 +87,7 @@ class UserController extends Controller
         }
         return response()->json([
             'success' => false,
-            
+
             'message' => 'Пользователя с такими данными не существует',
         ], 200);
     }
