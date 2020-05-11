@@ -74,17 +74,20 @@ class UserController extends Controller
                 $token = $user->generateToken();
                 return response()->json([
                     'success' => true,
+                    $user->role,
                     $user,
                 ], 200);
             } else {
                 return response()->json([
                     'success' => false,
+                    $user->active,
                     'message' => 'Вам нужно подтвердить почту',
                 ], 200);
             }
         }
         return response()->json([
             'success' => false,
+            
             'message' => 'Пользователя с такими данными не существует',
         ], 200);
     }
