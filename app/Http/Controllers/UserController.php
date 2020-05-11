@@ -83,6 +83,10 @@ class UserController extends Controller
                 ], 200);
             }
         }
+        return response()->json([
+            'success' => false,
+            'message' => 'Пользователя с такими данными не существует',
+        ], 200);
     }
 
     /**
