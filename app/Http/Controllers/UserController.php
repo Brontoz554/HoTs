@@ -87,7 +87,6 @@ class UserController extends Controller
         }
         return response()->json([
             'success' => false,
-
             'message' => 'Пользователя с такими данными не существует',
         ], 200);
     }
@@ -146,6 +145,10 @@ class UserController extends Controller
         ], 200);
     }
 
+    /**
+     * Отзывы конкретного пользователя
+     * @return object
+     */
     public function show()
     {
 //        $feedback = User::where(['id' => Auth::id()])->with('feedback')->get();
@@ -156,6 +159,12 @@ class UserController extends Controller
         ], 200);
     }
 
+    /**
+     * Удаление пользователя
+     * @param User $user
+     * @return \Illuminate\Http\JsonResponse
+     * @throws \Exception
+     */
     public function delete(User $user)
     {
         $user->delete();
@@ -165,6 +174,11 @@ class UserController extends Controller
         ], 200);
     }
 
+    /**
+     * Дополнительная информация в аккаунте
+     * @param People $request
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function profile(People $request)
     {
         if (count(\App\People::where(['user_id' => Auth::id()])->get()) != 1) {

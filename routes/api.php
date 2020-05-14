@@ -33,10 +33,10 @@ Route::middleware('auth:api')->group(function () {
 });
 //Route::apiresource('list','TaskController');
 
-Route::get('/list', 'ListController@index');
-Route::post('/list', 'ListController@store');
-Route::delete('/list/{list}', 'ListController@destroy');
-Route::put('/list/{name}', 'ListController@update');
-
-Route::post('/task', 'TaskController@store');
+//Route::get('/list', 'ListController@index');
+//Route::post('/list', 'ListController@store');
+//Route::delete('/list/{list}', 'ListController@destroy');
+//Route::put('/list/{name}', 'ListController@update');
+//
+//Route::post('/task', 'TaskController@store');
 

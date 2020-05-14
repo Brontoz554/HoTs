@@ -19,7 +19,16 @@ class ApiRequest extends FormRequest
     public function messages()
     {
         return [
-            'required' => 'Поле :attribute не может быть пустым',
+            'email.required' => 'Поле "Емайл" не может быть пустым',
+            'comment.required' => 'Поле "Ваш отзыв" не может быть пустым',
+            'password.required' => 'Поле "пароль" не может быть пустым',
+            'first_name.required' => 'Поле "имя" не может быть пустым',
+            'second_name.required' => 'Поле "фамилия" не может быть пустым',
+            'height.required' => 'Поле "рост" не может быть пустым',
+            'weight.required' => 'Поле "вес" не может быть пустым',
+            'activity.required' => 'Поле "активность" не может быть пустым',
+            'gender.required' => 'Поле "пол" не может быть пустым',
+            'age.required' => 'Поле "возраст" не может быть пустым',
             'email.regex' => 'Такой электронной почты не существует',
             'role.regex' => 'Вы используете запрещённые символы',
             'email.unique' => 'Пользователь с таким E-mail уже существует.',
