@@ -20,6 +20,7 @@ class ApiRequest extends FormRequest
     {
         return [
             'email.required' => 'Поле Емайл не может быть пустым',
+            'role.required' => 'Вы должны выбрать кем вы будете, тренером или подопечным',
             'comment.required' => 'Поле Ваш отзыв не может быть пустым',
             'password.required' => 'Поле пароль не может быть пустым',
             'password_confirmation.required' => 'Поле повторите пароль не может быть пустым',
