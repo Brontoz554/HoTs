@@ -182,10 +182,8 @@ class UserController extends Controller
     public function profile(People $request)
     {
         if (count(\App\People::where(['user_id' => Auth::id()])->get()) != 1) {
-
             $fileName = md5(time() + rand(0, 50)) . "." . $request->photo->getClientOriginalExtension();
             $path = $request->file('photo')->move(public_path("/image"), $fileName);
-
             $info = new \App\People();
             $info->first_name = $request->first_name;
             $info->second_name = $request->second_name;
@@ -196,6 +194,10 @@ class UserController extends Controller
             $info->activity = $request->activity;
             $info->user_id = Auth::id();
             $info->photo = url('/image/' . $fileName);
+            $info->description = $request->description;
+            $info->experience = $request->experience;
+            $info->target = $request->target;
+            $info->info_self = $request->info_self;
             $info->save();
             return response()->json([
                 'success' => true,

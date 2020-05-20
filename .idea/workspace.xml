@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e493a8ba-727b-41cd-a48b-5274f37143a6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Requests/ApiRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/ApiRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/People.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/People.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_06_101355_people.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_06_101355_people.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +160,9 @@
       <workItem from="1589105939083" duration="6129000" />
       <workItem from="1589213205886" duration="1237000" />
       <workItem from="1589351591444" duration="1311000" />
-      <workItem from="1589479029131" duration="1106000" />
+      <workItem from="1589479029131" duration="1877000" />
+      <workItem from="1589697784498" duration="50000" />
+      <workItem from="1589991925606" duration="1685000" />
     </task>
     <servers />
   </component>
@@ -176,10 +182,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1588758348547" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1588923625343">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1589697834315">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1588923625343" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1589697834315" />
     <state x="184" y="6" key="SettingsEditor" timestamp="1586257945745">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -188,10 +194,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1588756784003" />
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1589479037297">
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1589697784482">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1589479037297" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1589697784482" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1588952135896">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

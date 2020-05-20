@@ -24,8 +24,10 @@ class People extends Migration
             $table->integer('height');
             $table->integer('weight');
             $table->string('photo', 100);
-            $table->string('experience', 200)->default(0);
-            $table->string('description', 400)->default(0);
+            $table->string('target', 500)->default(0);
+            $table->string('info_self', 500)->default(0);
+            $table->string('experience', 500)->default(0);
+            $table->string('description', 500)->default(0);
             $table->timestamps();
             $table->foreign('user_id')->references('id')->on('user')->onDelete('cascade');
         });
