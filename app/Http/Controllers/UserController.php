@@ -221,7 +221,8 @@ class UserController extends Controller
         $info->save();
         return response()->json([
             'success' => true,
-            'message' => $list
+            'message' => $list,
+            'user' => User::where(['id' => Auth::id()])->with('people')->get()
         ], 201);
     }
 }
