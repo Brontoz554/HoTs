@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e493a8ba-727b-41cd-a48b-5274f37143a6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/People.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/People.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,6 +161,7 @@
       <workItem from="1589479029131" duration="1877000" />
       <workItem from="1589697784498" duration="50000" />
       <workItem from="1589991925606" duration="2023000" />
+      <workItem from="1590237262354" duration="819000" />
     </task>
     <servers />
   </component>
@@ -190,10 +193,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1588756784003" />
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1589697784482">
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1590237286592">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1589697784482" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1590237286592" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1588952135896">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

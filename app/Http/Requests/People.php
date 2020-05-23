@@ -22,8 +22,8 @@ class People extends ApiRequest
             'gender' => 'required|min:2|max:20',
             'age' => 'required|min:1|max:3|regex:/[0-9]/',
             'photo' => 'required|mimes:jpeg,bmp,png,svg|max:10000',
-            'target' => 'min:5|max:500|regex:/[А-яЁё A-z0-9,\.\!\?\(\)]/',
-            'info_self' => 'min:5|max:500|regex:/[А-яЁё A-z0-9,\.\!\?\(\)]/',
+            'target' => 'max:500|regex:/[А-яЁё A-z0-9,\.\!\?\(\)]/',
+            'info_self' => 'max:500|regex:/[А-яЁё A-z0-9,\.\!\?\(\)]/',
             'description' => 'min:5|max:500|regex:/[А-яЁё A-z0-9,\.\!\?\(\)]/',
             'experience' => 'min:5|max:500|regex:/[А-яЁё A-z0-9,\.\!\?\(\)]/'
         ];

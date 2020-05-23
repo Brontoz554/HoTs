@@ -181,26 +181,48 @@ class UserController extends Controller
      */
     public function profile(People $request)
     {
-            $fileName = md5(time() + rand(0, 50)) . "." . $request->photo->getClientOriginalExtension();
-            $path = $request->file('photo')->move(public_path("/image"), $fileName);
-            $info = new \App\People();
-            $info->first_name = $request->first_name;
-            $info->second_name = $request->second_name;
-            $info->age = $request->age;
-            $info->height = $request->height;
-            $info->weight = $request->weight;
-            $info->gender = $request->gender;
-            $info->activity = $request->activity;
-            $info->user_id = Auth::id();
-            $info->photo = url('/image/' . $fileName);
+        $list = [];
+        $fileName = md5(time() + rand(0, 50)) . "." . $request->photo->getClientOriginalExtension();
+        $path = $request->file('photo')->move(public_path("/image"), $fileName);
+        $info = new \App\People();
+        $info->first_name = $request->first_name;
+        $info->second_name = $request->second_name;
+        $info->age = $request->age;
+        $info->height = $request->height;
+        $info->weight = $request->weight;
+        $info->gender = $request->gender;
+        $info->activity = $request->activity;
+        $info->user_id = Auth::id();
+        $info->photo = url('/image/' . $fileName);
+        if (strlen($request->description) > 0) {
             $info->description = $request->description;
+        } else {
+            $list[] = 'Поле Description пустое';
+        }
+
+        if (strlen($request->experience) > 0) {
             $info->experience = $request->experience;
+        } else {
+            $list[] = 'Поле experience пустое';
+        }
+
+        if (strlen($request->target) > 0) {
             $info->target = $request->target;
+        } else {
+            $list[] = 'Поле target пустое';
+        }
+
+        if (strlen($request->info_self) > 0) {
             $info->info_self = $request->info_self;
-            $info->save();
-            return response()->json([
-                'success' => true,
-            ], 201);
+        } else {
+            $list[] = 'Поле info_self пустое';
+        }
+
+        $info->save();
+        return response()->json([
+            'success' => true,
+            'message' => $list
+        ], 201);
     }
 }
 
